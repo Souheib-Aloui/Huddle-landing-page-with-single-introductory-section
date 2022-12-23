@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(./images/bg-desktop.svg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -180px;
+  background-color: var(--Violet);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  margin: auto;
+  max-width: 100%;
+  width: 1200px; 
+
+}
+.flex-container {
+  margin-top: 80px;
+  display: flex;
+
+}
+.flex-container div:first-child {
+  margin-right: 30px;
+  flex: 0.55;
+}
+.flex-container div:last-child {
+  flex: 0.45;
+  margin-top: 40px;
+  color: #fff;
+}
+h1 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family:  'Poppins', sans-serif;
+  font-size: 2.5rem;
+  
+}
+p {
+  opacity: 0.775;
+  font-size: 18px;
+  line-height: 1.6;
+  padding-right: 5px;
+  margin-bottom: 40px;
+}
+button {
+  font-size: 1rem;
+  font-family:  'Poppins', sans-serif;
+  font-weight: 400;
+  color: var(--Violet);
+  padding: 25px 75px ;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  
+}
+button:active {
+  background-color: var(--Soft-Magenta);
+  color: #fff;
+}
+.social-links {
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin-top: 100px;
+}
+.social-links a {
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 56px;
+  text-decoration: none;
+  margin-left: 25px;
+  margin-top: 40px;
+  transition: color 0.1s, border 0.1s;
+}
+.social-links a:active {
+  color: var(--Soft-Magenta);
+  border: 2px solid var(--Soft-Magenta);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+    background-image: url(images/bg-mobile.svg);
+    background-position: top;
+    background-size: contain;
+  }
+  .logo {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 200px;
+  }
+  .flex-container {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+  }
+ .flex-container > div:first-child{
+  flex: 1;
+
+ }
+ .flex-container > div:last-child {
+  flex: 1;
+ }
+ h1 {
+  font-size: 1.7rem;
+ }
+ .social-links {
+  justify-content: center;
+ }
+}
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .flex-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+  font-size: 16px; 
+  text-align: center; 
+  
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+  
+ }
